@@ -1,0 +1,12 @@
+<div class="container">
+    <carousel [autoplay]="true" [autoplayInterval]="5000" [dots]="true"> 
+    <ng-template ngFor let-banner [ngForOf]="banners" let-i="index" >
+        
+    <div class="carousel-cell">
+     <a href="http://facebook.com">   <img src="{{banner.banner_path}}"></a>
+    </div>
+
+   </ng-template>
+</carousel>
+</div>
+
